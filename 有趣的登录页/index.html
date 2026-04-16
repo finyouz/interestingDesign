@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <title>有趣登录页</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-container">
+            <div class="left-container-content">
+                <div class="content-logo">
+                    <img src="./images/logo.svg" alt="Logo" class="logo">
+                    <h3 class="title">有趣登录页</h3>
+                </div>
+
+                <div class="characters-wrapper">
+                    <div class="characters-scene">
+                        <!--紫色-->
+                        <div class="character char-purple" id="char-purple">
+                            <div class="eyes" id="purple-eyes">
+                                <div class="eyeball" id="purple-eye-l">
+                                    <div class="pupil"></div>
+                                </div>
+
+                                <div class="eyeball" id="purple-eye-r">
+                                    <div class="pupil"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--黑色-->
+                        <div class="character char-black" id="char-black">
+                            <div class="eyes" id="black-eyes">
+                                <div class="eyeball" id="black-eye-l">
+                                    <div class="pupil"></div>
+                                </div>
+
+                                <div class="eyeball" id="black-eye-r">
+                                    <div class="pupil"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--橙色-->
+                        <div class="character char-orange" id="char-orange">
+                            <div class="eyes" id="orange-eyes">
+                                <div class="bare-pupil" id="orange-pupil-l"></div>
+                                <div class="bare-pupil" id="orange-pupil-r"></div>
+                            </div>
+                            <div class="orange-mouth" id="orange-mouth">
+
+                            </div>
+                        </div>
+                        <!--黄色    -->
+                        <div class="character char-yellow" id="char-yellow">
+                            <div class="eyes" id="yellow-eyes">
+                                <div class="bare-pupil" id="yellow-pupil-l"></div>
+                                <div class="bare-pupil" id="yellow-pupil-r"></div>
+                            </div>
+                            <div class="yellow-mouth" id="yellow-mouth">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-container">
+            <div class="right-container-content">
+                <div class="content-login-icon">
+                    <img src="./images/logo.svg" alt="icon" class="login-icon">
+                </div>
+
+                <div class="content-title">
+                    <h1 class="welcome">欢迎回来！</h1>
+                    <p class="welcome-text">请登录以继续访问您的账户</p>
+                </div>
+
+
+                <form id="content-form" class="content-form" onsubmit="return false;">
+                    <div class="form-group">
+                        <label for="email" id="email-label" class="error-label">邮箱</label>
+                        <div class="input-wrapper">
+                            <input type="email" id="email" placeholder="请输入你的邮箱" autocomplete="off" class="error">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" id="password-label" class="error-label">密码</label>
+                        <div class="input-wrapper">
+                            <input type="password" id="password" placeholder="请输入你的密码" autocomplete="off" class="error">
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox">
+                            <span>记住我30天</span>
+                        </label>
+                    </div>
+
+                    <div class="error-msg" id="error-msg"></div>
+
+                    <button type="submit" class="btn-login" id="btn-login">
+                        <span class="btn-text">Log In</span>
+                        <div class="btn-hover-content">
+                            <span>Log In</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </div>
+                    </button>
+                    <button type="button" class="btn-google" id="btn-google">
+                        <span class="btn-text">
+                            <svg class="google-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"
+                                    fill="#4285F4"></path>
+                                <path
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                    fill="#34A853"></path>
+                                <path
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18A11.96 11.96 0 001 12c0 1.94.46 3.77 1.18 5.07l3.66-2.84v-.14z"
+                                    fill="#FBBC05"></path>
+                                <path
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                    fill="#EA4335"></path>
+                            </svg>
+                            Log in with Google
+                        </span>
+                        <div class="btn-hover-content">
+                            <span>Log in with Google</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,353 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+.container .left-container {
+  flex: 1;
+  padding: 40px 48px;
+  background: linear-gradient(135deg, #d4d0dc 0%, #c8c4d0 50%, #bbb7c5 100%);
+}
+.container .left-container .left-container-content {
+  height: 100%;
+  position: relative;
+}
+.container .left-container .left-container-content .content-logo {
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+.container .left-container .left-container-content .content-logo .logo {
+  width: 40px;
+  height: 40px;
+}
+.container .left-container .left-container-content .content-logo .title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 10px;
+}
+.container .left-container .left-container-content .characters-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -35%);
+  height: 420px;
+}
+.container .left-container .left-container-content .characters-wrapper .characters-scene {
+  position: relative;
+  width: 480px;
+  height: 360px;
+}
+.container .left-container .left-container-content .characters-wrapper .characters-scene .character {
+  position: absolute;
+  bottom: 0;
+  transition: all 0.7s ease-in-out;
+  transform-origin: bottom center;
+}
+.container .left-container .left-container-content .characters-wrapper .characters-scene .char-purple {
+  left: 60px;
+  width: 170px;
+  height: 370px;
+  background: #6c3ff5;
+  border-radius: 10px 10px 0 0;
+  z-index: 1;
+}
+.container .left-container .left-container-content .characters-wrapper .characters-scene .char-purple .eyes {
+  position: absolute;
+  left: 60px;
+  top: 30px;
+  gap: 28px;
+  display: flex;
+  transition: all 0.7s ease-in-out;
+}
+.container .left-container .left-container-content .characters-wrapper .characters-scene .char-purple .eyes .eyeball {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: height 0.15s ease;
+  overflow: hidden;
+}
+.container .left-container .left-container-content .characters-wrapper .characters-scene .char-purple .eyes .eyeball .pupil {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #2d2d2d;
+  transition: transform 0.1s ease-out;
+}
+.container .left-container .left-container-content .characters-wrapper .characters-scene .char-black {
+  left: 220px;
+  width: 115px;
+  height: 290px;
+  background: #2d2d2d;
+  border-radius: 8px 8px 0 0;
+  z-index: 2;
+}
+.container .left-container .left-container-content .characters-wrapper .characters-scene .char-black .eyes {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  gap: 20px;
+  display: flex;
+  transition: all 0.7s ease-in-out;
+}
+.container .left-container .left-container-content .characters-wrapper .characters-scene .char-black .eyes .eyeball {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: height 0.15s ease;
+  overflow: hidden;
+}
+.container .left-container .left-container-content .characters-wrapper .characters-scene .char-black .eyes .eyeball .pupil {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #2d2d2d;
+  transition: transform 0.1s ease-out;
+}
+.container .left-container .left-container-content .characters-wrapper .characters-scene .char-orange {
+  left: 0;
+  width: 230px;
+  height: 190px;
+  background: #ff9b6b;
+  border-radius: 115px 115px 0 0;
+  z-index: 3;
+}
+.container .left-container .left-container-content .characters-wrapper .characters-scene .char-orange .eyes {
+  position: absolute;
+  left: 66.5966px;
+  top: 30px;
+  gap: 20px;
+  display: flex;
+  transition: all 0.7s ease-in-out;
+}
+.container .left-container .left-container-content .characters-wrapper .characters-scene .char-orange .eyes .bare-pupil {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #2d2d2d;
+  transition: transform 0.7s ease-in-out;
+}
+.container .left-container .left-container-content .characters-wrapper .characters-scene .char-orange .orange-mouth {
+  position: absolute;
+  left: 55px;
+  top: 78px;
+  transform: rotate(0deg);
+  width: 50px;
+  height: 4px;
+  background: #2d2d2d;
+  border-radius: 2px;
+  transition: all 0.7s ease-in-out;
+}
+.container .left-container .left-container-content .characters-wrapper .characters-scene .char-yellow {
+  left: 290px;
+  width: 135px;
+  height: 215px;
+  background: #e8d754;
+  border-radius: 68px 68px 0 0;
+  z-index: 4;
+}
+.container .left-container .left-container-content .characters-wrapper .characters-scene .char-yellow .eyes {
+  position: absolute;
+  left: 66.5966px;
+  top: 30px;
+  gap: 20px;
+  display: flex;
+  transition: all 0.7s ease-in-out;
+}
+.container .left-container .left-container-content .characters-wrapper .characters-scene .char-yellow .eyes .bare-pupil {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #2d2d2d;
+  transition: transform 0.7s ease-in-out;
+}
+.container .left-container .left-container-content .characters-wrapper .characters-scene .char-yellow .yellow-mouth {
+  position: absolute;
+  left: 55px;
+  top: 78px;
+  transform: rotate(0deg);
+  width: 50px;
+  height: 4px;
+  background: #2d2d2d;
+  border-radius: 2px;
+  transition: all 0.7s ease-in-out;
+}
+.container .right-container {
+  flex: 1;
+  padding: 40px 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .right-container .right-container-content {
+  width: 100%;
+  max-width: 400px;
+}
+.container .right-container .right-container-content .content-login-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.container .right-container .right-container-content .content-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container .right-container .right-container-content .content-title .welcome {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a2e;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+.container .right-container .right-container-content .content-title .welcome-text {
+  font-size: 14px;
+  color: #888;
+}
+.container .right-container .right-container-content .content-form .form-group {
+  margin-bottom: 20px;
+}
+.container .right-container .right-container-content .content-form .form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+}
+.container .right-container .right-container-content .content-form .form-group .input-wrapper input {
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-bottom: 1.5px solid #e0e0e0;
+  padding: 0 40px 0 0;
+  font-size: 15px;
+  font-family: inherit;
+  color: #1a1a2e;
+  background: transparent;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.container .right-container .right-container-content .content-form .form-options {
+  margin-bottom: 24px;
+}
+.container .right-container .right-container-content .content-form .form-options .remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #555;
+  cursor: pointer;
+}
+.container .right-container .right-container-content .content-form .form-options .remember-me input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #5b21b6;
+  cursor: pointer;
+}
+.container .right-container .right-container-content .content-form .error-msg {
+  display: none;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #dc2626;
+  background: rgba(220, 38, 38, 0.08);
+  border: 1px solid rgba(220, 38, 38, 0.2);
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+.container .right-container .right-container-content .content-form .btn-login {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  border: 1.5px solid #1a1a2e;
+  background: #1a1a2e;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  overflow: hidden;
+  margin-bottom: 14px;
+  transition: all 0.3s;
+}
+.container .right-container .right-container-content .content-form .btn-login .btn-text {
+  display: inline-block;
+  transition: all 0.3s;
+}
+.container .right-container .right-container-content .content-form .btn-login:hover .btn-text {
+  transform: translateX(40px);
+  opacity: 0;
+}
+.container .right-container .right-container-content .content-form .btn-login:hover .btn-hover-content {
+  opacity: 1;
+}
+.container .right-container .right-container-content .content-form .btn-login .btn-hover-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #5b21b6;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.3s;
+  border-radius: 25px;
+}
+.container .right-container .right-container-content .content-form .btn-google {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  border: 1.5px solid #e0e0e0;
+  background: #f5f5f5;
+  color: #333;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.container .right-container .right-container-content .content-form .btn-google .btn-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s;
+}
+.container .right-container .right-container-content .content-form .btn-google .btn-text .google-icon {
+  width: 18px;
+  height: 18px;
+}
+.container .right-container .right-container-content .content-form .btn-google .btn-hover-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #5b21b6;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.3s;
+  border-radius: 25px;
+}
+.container .right-container .right-container-content .content-form .btn-google:hover .btn-text {
+  transform: translateX(40px);
+  opacity: 0;
+}
+.container .right-container .right-container-content .content-form .btn-google:hover .btn-hover-content {
+  opacity: 1;
+}
+@media screen and (max-width: 750px) {
+  .container .left-container {
+    display: none;
+  }
+}
